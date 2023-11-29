@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.excelinstitution/admission.com</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="stafflogin">
+        <fieldset>
+            <legend>Staff Login</legend>
+
+            <table>
+                <tr>
+                    <td><label>Name:</label></td>
+                    <td><input type="text" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Password:</label></td>
+                    <td><input type="password" required></td>
+                </tr>
+
+                <tr>
+                    <td><button type="reset">RESET</button></td>
+                    <td><button type="submit" id="submit2">SUBMIT</button></td>
+                </tr>
+            </table>
+
+        </fieldset>
+    </div>
+
+    <br>
+
+
+    <div class="logo">
+        <img src="xl.png" alternative="Excel Enginerring College logo" width="30%" alt="sret logo">
+        <h1>Excel Group of Institutions</h1>
+        <h2>Komarapalayam-637303, Namakkal District</h2>
+
+    </div>
+    <div class="adm">
+        <div class="formtitle">
+            <h1>
+                ADMISSION PAGE
+            </h1>
+        </div>
+
+
+        <form id="admission">
+            <table>
+                <tr>
+                    <td><label>Name:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="Enter your name" maxlength="40" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Select Institute:</label></td>
+                    <td><select id="stream" name="stream">
+                            <option>SELECT</option>
+                            <option value="Engineering">Excel Engineering College (AUTONOMOUS)</option>
+                            <option value="Architecture">Excel College of Architecture and Planning</option>
+                            <option value="Polytechnic">Excel Polytechnic College</option>
+                            <option value="Commerce & Science">Excel College For Commerce and Science</option>
+                            <option value="Education">Excel and Kandhaswamy College of Education</option>
+                            <option value="Pharmacy">Excel College of Pharmacy</option>
+                            <option value="Physiotheraphy">
+                                Excel College of Physiotheraphy and Research Centre
+                            </option>
+                            <option value="Health">Excel Institute of Health Science</option>
+                            <option value="Naturopathy & Yoga">
+                                Excel Medical College for Naturopathy and Yoga
+                            </option>
+                            <option value="Siddha">
+                                Excel Siddha Medical College and Research Centre
+                            </option>
+                            <option value="Homoeopathy">Excel Homoeopathy Medical College</option>
+                            <option value="Nursing">Excel Nursing College</option>
+                            <option value="ITI">Excel ITI</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td><label>SSLC Mark:</label></td>
+                    <td><input type="number" id="sslc" name="sslc" placeholder="Enter your SSLC Mark" maxlength="3"
+                            minlength="3"></td>
+                </tr>
+
+                <tr>
+                    <td><label>HSC Mark:</label></td>:</td>
+                    <td><input type="number" id="hsc" name="hsc" placeholder="Enter your HSC Mark" maxlength="3"
+                            minlength="3"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Cut-off:</label></td>
+                    <td><input type="number" id="cutoff" name="cutoff" placeholder="Enter your CUT-OFF" maxlength="3"
+                            minlength="3"></td>
+                </tr>
+
+
+                <tr>
+                    <td><label>DOB:</label></td>
+                    <td><input type="date" id="dob" name="dob"></td>
+                </tr>
+
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td><select id="gender" name="gender">
+                            <option>SELECT</option>
+                            <option value="Male">MALE</option>
+                            <option value="Female">FEMALE</option>
+
+                        </select></td>
+
+
+                <tr>
+                    <td><label>Phone number:</label></td>
+                    <td><input type="tel" id="phone" name="phone" placeholder="Enter your phone_no" minlength="10"
+                            maxlength="10" required></td>
+                </tr>
+
+
+                <tr>
+                    <td><button type="reset">RESET</button></td>
+                    <td><button type="submit" id="submit">SUBMIT</button></td>
+                </tr>
+            </table>
+        </form>
+
+
+    </div>
+
+    <marquee behavior="alternate" height="25" scrollamount="4" width="5%" loop="1" direction="left">
+        NOTE : </marquee>
+    <marquee behavior="scroll" height="25" scrollamount="5" width="94.35%" bgcolor="red" loop="0" direction="right">
+        <code>GQ&emsp;&emsp;seat&emsp;&emsp;is&emsp;&emsp;allocated&emsp;&emsp;based&emsp;&emsp;on&emsp;&emsp;your&emsp;&emsp;12th&emsp;&emsp;cutoff&emsp;&emsp;mark:&emsp;&emsp;</code>
+    </marquee>
+
+    <div class="address">
+        <h3>ADDRESS:</h3>
+
+        <b>NH-544,Salem Main Road,Komarapalayam,Namakkal District -637303,Near Erode/Bhavani, Tamil
+            Nadu.
+        </b>
+        <br>
+        <a href="https://maps.app.goo.gl/ZmxucqhKjtjd2dcE6"><b>GET DIRECTION</b></a>
+        <h3><b>Ph.no:+91 4288 227361 to 68</b></h3>
+    </div>
+
+
+    <footer>
+        <b>Copyrights &copy; EXCEL GROUP OF INSTITUTIONS 2023. All Rights Reserved</b>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script src="./admission.js"></script>
+
+</body>
+
+</html>
